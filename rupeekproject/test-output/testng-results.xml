@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="9" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-04-27T17:38:11 IST" name="Default suite" finished-at="2020-04-27T17:38:17 IST" duration-ms="6381">
+    <groups>
+    </groups>
+    <test started-at="2020-04-27T17:38:11 IST" name="Default test" finished-at="2020-04-27T17:38:17 IST" duration-ms="6381">
+      <class name="com.tyss.rupeekproject.testscripts.Authenticate">
+        <test-method is-config="true" signature="preConfiguration()[pri:0, instance:com.tyss.rupeekproject.testscripts.Authenticate@3541cb24]" started-at="2020-04-27T17:38:10 IST" name="preConfiguration" finished-at="2020-04-27T17:38:11 IST" duration-ms="971" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preConfiguration -->
+        <test-method signature="authenticationWithValidUNandPwd()[pri:0, instance:com.tyss.rupeekproject.testscripts.Authenticate@3541cb24]" started-at="2020-04-27T17:38:11 IST" name="authenticationWithValidUNandPwd" finished-at="2020-04-27T17:38:14 IST" duration-ms="3364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- authenticationWithValidUNandPwd -->
+        <test-method signature="getAllCustomersWithoutAuth()[pri:0, instance:com.tyss.rupeekproject.testscripts.Authenticate@3541cb24]" started-at="2020-04-27T17:38:14 IST" name="getAllCustomersWithoutAuth" finished-at="2020-04-27T17:38:15 IST" duration-ms="264" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected content-type "ANY" doesn't match actual content-type "application/json;charset=UTF-8".
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected content-type "ANY" doesn't match actual content-type "application/json;charset=UTF-8".
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
+at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:237)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:249)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:190)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
+at io.restassured.internal.ResponseSpecificationImpl.contentType(ResponseSpecificationImpl.groovy:421)
+at io.restassured.internal.ValidatableResponseOptionsImpl.contentType(ValidatableResponseOptionsImpl.java:220)
+at io.restassured.internal.ValidatableResponseImpl.super$2$contentType(ValidatableResponseImpl.groovy)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)
+at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+at io.restassured.internal.ValidatableResponseImpl.contentType(ValidatableResponseImpl.groovy:278)
+at io.restassured.internal.ValidatableResponseImpl.contentType(ValidatableResponseImpl.groovy)
+at com.tyss.rupeekproject.testscripts.Authenticate.getAllCustomersWithoutAuth(Authenticate.java:108)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1378)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllCustomersWithoutAuth -->
+        <test-method signature="authWithInvalidPwd()[pri:0, instance:com.tyss.rupeekproject.testscripts.Authenticate@3541cb24]" started-at="2020-04-27T17:38:15 IST" name="authWithInvalidPwd" finished-at="2020-04-27T17:38:15 IST" depends-on-methods="com.tyss.rupeekproject.testscripts.Authenticate.authenticationWithValidUNandPwd" duration-ms="285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- authWithInvalidPwd -->
+        <test-method signature="authWithInvalidUN()[pri:0, instance:com.tyss.rupeekproject.testscripts.Authenticate@3541cb24]" started-at="2020-04-27T17:38:15 IST" name="authWithInvalidUN" finished-at="2020-04-27T17:38:15 IST" depends-on-methods="com.tyss.rupeekproject.testscripts.Authenticate.authenticationWithValidUNandPwd" duration-ms="275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- authWithInvalidUN -->
+        <test-method signature="authWithInvalidUNAndPwd()[pri:0, instance:com.tyss.rupeekproject.testscripts.Authenticate@3541cb24]" started-at="2020-04-27T17:38:15 IST" name="authWithInvalidUNAndPwd" finished-at="2020-04-27T17:38:15 IST" depends-on-methods="com.tyss.rupeekproject.testscripts.Authenticate.authenticationWithValidUNandPwd" duration-ms="299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- authWithInvalidUNAndPwd -->
+        <test-method signature="authWithoutPwd()[pri:0, instance:com.tyss.rupeekproject.testscripts.Authenticate@3541cb24]" started-at="2020-04-27T17:38:15 IST" name="authWithoutPwd" finished-at="2020-04-27T17:38:16 IST" depends-on-methods="com.tyss.rupeekproject.testscripts.Authenticate.authenticationWithValidUNandPwd" duration-ms="349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- authWithoutPwd -->
+        <test-method signature="authWithoutUN()[pri:0, instance:com.tyss.rupeekproject.testscripts.Authenticate@3541cb24]" started-at="2020-04-27T17:38:16 IST" name="authWithoutUN" finished-at="2020-04-27T17:38:16 IST" depends-on-methods="com.tyss.rupeekproject.testscripts.Authenticate.authenticationWithValidUNandPwd" duration-ms="308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- authWithoutUN -->
+        <test-method signature="getAllCustomers()[pri:0, instance:com.tyss.rupeekproject.testscripts.Authenticate@3541cb24]" started-at="2020-04-27T17:38:16 IST" name="getAllCustomers" finished-at="2020-04-27T17:38:17 IST" depends-on-methods="com.tyss.rupeekproject.testscripts.Authenticate.authenticationWithValidUNandPwd" duration-ms="605" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllCustomers -->
+        <test-method signature="getUserWithInvalidPathParam()[pri:0, instance:com.tyss.rupeekproject.testscripts.Authenticate@3541cb24]" started-at="2020-04-27T17:38:17 IST" name="getUserWithInvalidPathParam" finished-at="2020-04-27T17:38:17 IST" depends-on-methods="com.tyss.rupeekproject.testscripts.Authenticate.authenticationWithValidUNandPwd" duration-ms="252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserWithInvalidPathParam -->
+        <test-method signature="getUserWithPhoneNum()[pri:0, instance:com.tyss.rupeekproject.testscripts.Authenticate@3541cb24]" started-at="2020-04-27T17:38:17 IST" name="getUserWithPhoneNum" finished-at="2020-04-27T17:38:17 IST" depends-on-methods="com.tyss.rupeekproject.testscripts.Authenticate.getAllCustomers, com.tyss.rupeekproject.testscripts.Authenticate.authenticationWithValidUNandPwd" duration-ms="242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserWithPhoneNum -->
+      </class> <!-- com.tyss.rupeekproject.testscripts.Authenticate -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
